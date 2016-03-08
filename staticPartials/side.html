@@ -1,0 +1,86 @@
+<template name="side">
+  <div class="side">
+    <div class='spacer'>
+      <form action="https://www.reddit.com/search" id="search" role="search">
+        <input type="text" name="q" placeholder="search" tabindex="20"><input type="submit" value="" tabindex="22">
+        <div id="searchexpando" class="infobar">
+          <div id="moresearchinfo">
+            <p>use the following search parameters to narrow your results:</p>
+            <dl>
+              <dt>subreddit:<i>subreddit</i></dt>
+              <dd>find submissions in &quot;subreddit&quot;</dd>
+              <dt>author:<i>username</i></dt>
+              <dd>find submissions by &quot;username&quot;</dd>
+              <dt>site:<i>example.com</i></dt>
+              <dd>find submissions from &quot;example.com&quot;</dd>
+              <dt>url:<i>text</i></dt>
+              <dd>search for &quot;text&quot; in url</dd>
+              <dt>selftext:<i>text</i></dt>
+              <dd>search for &quot;text&quot; in self post contents</dd>
+              <dt>self:yes (or self:no)</dt>
+              <dd>include (or exclude) self posts</dd>
+              <dt>nsfw:yes (or nsfw:no)</dt>
+              <dd>include (or exclude) results marked as NSFW</dd>
+            </dl>
+            <p>e.g.&#32;<code>subreddit:aww site:imgur.com dog</code></p>
+            <p><a href="https://www.reddit.com/wiki/search">see the search faq for details.</a></p>
+          </div>
+          <p><a href="https://www.reddit.com/wiki/search" id="search_showmore">advanced search: by author, subreddit...</a></p>
+        </div>
+      </form>
+    </div>
+    <div class='spacer'>
+      <form method="post" action="https://www.reddit.com/post/login" id="login_login-main" class="login-form login-form-side">
+        <input type="hidden" name="op" value="login-main" /><input name="user" placeholder="username" type="text" maxlength="20" tabindex="1"/><input name="passwd" placeholder="password" type="password" tabindex="1"/>
+        <div class="status"></div>
+        <div id="remember-me"><input type="checkbox" name="rem" id="rem-login-main" tabindex="1" /><label for="rem-login-main">remember me</label><a class="recover-password" href="/password">reset password</a></div>
+        <div class="submit"><span class="throbber"></span><button class="btn" type="submit" tabindex="1">login</button></div>
+        <div class="clear"></div>
+      </form>
+    </div>
+    <div class='spacer'>
+      <div class="sponsorshipbox"></div>
+    </div>
+    <div class='spacer'>
+      <div class="sidebox submit submit-link">
+        <div class="morelink">
+          <a href="https://www.reddit.com/submit" data-event-action="submit" data-type="subreddit" data-event-detail="link" class="login-required access-required" target="_top" >Submit a new link</a>
+          <div class="nub"></div>
+        </div>
+      </div>
+    </div>
+    <div class='spacer'>
+      <div class="sidebox submit submit-text">
+        <div class="morelink">
+          <a href="https://www.reddit.com/submit?selftext=true" data-event-action="submit" data-type="subreddit" data-event-detail="self" class="login-required access-required" target="_top" >Submit a new text post</a>
+          <div class="nub"></div>
+        </div>
+      </div>
+    </div>
+    <div class='spacer'>
+      <div class="goldvertisement ">
+        <div class="inner">
+          <h2 >daily reddit gold goal</h2>
+          <div class="progress">
+            <p>45%</p>
+            <div class="bar"><span style="width: 45%"></span></div>
+          </div>
+          <a href="/gold?goldtype=code&amp;source=progressbar" target="_blank">help support reddit</a>
+          <div class="gold-bubble hover-bubble help-bubble anchor-top-centered">
+            <p><span class="gold-branding">reddit gold</span>&#32;gives you extra features and helps keep our servers running. We believe the more reddit can be user-supported, the freer we will be to make reddit the best it can be.</p>
+            <p class="buy-gold">Buy gold for yourself to gain access to&#32;<a href="/gold/about" target="_blank">extra features</a>&#32;and&#32;<a href="/r/goldbenefits" target="_blank">special benefits</a>. A month of gold pays for &#32;<b>231.26 minutes</b>&#32;of reddit server time!</p>
+            <p class="give-gold">Give gold to thank exemplary people and encourage them to post more.</p>
+            <p class="aside">This daily goal updates every 10 minutes and is reset at midnight&#32;<a target="_blank" href="https://en.wikipedia.org/wiki/Pacific_Time_Zone">Pacific Time</a>&#32; (11 hours, 59 minutes from now).</p>
+            <div class="history">
+              <p >Yesterday's reddit gold goal</p>
+              <div class="progress">
+                <p>82%</p>
+                <div class="bar"><span style="width: 82%"></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

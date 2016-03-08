@@ -1,0 +1,31 @@
+<head>
+  <title>reddit: the front page of the internet</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="alternate" media="only screen and (max-width: 640px)" href="https://m.reddit.com/" />
+  <meta name="viewport" content="width=1024">
+  <link rel='icon' href="//www.redditstatic.com/icon.png" sizes="256x256" type="image/png" />
+  <link rel='shortcut icon' href="//www.redditstatic.com/favicon.ico" type="image/x-icon" />
+  <link rel='apple-touch-icon-precomposed' href="//www.redditstatic.com/icon-touch.png" />
+  <link rel="stylesheet" type="text/css" href="https://www.redditstatic.com/reddit.NNKOzaOxe1E.css" media="all">
+</head>
+<body class="listing-page hot-page front-page" >
+  {{>header}}
+  {{>side}}
+  <a name="content"></a>
+  <div class="content" role="main">
+    {{>trending}}
+    <div class='spacer'>
+      <style>body >.content .link .rank, .rank-spacer { width: 2.2ex } body >.content .link .midcol, .midcol-spacer { width: 5.1ex } .adsense-wrap { background-color: #eff7ff; font-size: 18px; padding-left: 7.3ex; padding-right: 5px; }</style>
+      <div id="siteTable" class="sitetable linklisting">
+
+        {{#each things}}
+          {{>thing}}
+          <div class="clearleft"></div>
+        {{/each}}
+
+        <div class="nav-buttons"><span class="nextprev">view more:&#32;<a href="https://www.reddit.com/?count=25&amp;after=t3_49iemd" rel="nofollow next" >next &rsaquo;</a></span><span class="next-suggestions">or try a&#32;<a href="https://www.reddit.com/r/random" >random subreddit</a></span></div>
+      </div>
+    </div>
+  </div>
+  {{>footer}}
+</body>

@@ -1,0 +1,91 @@
+<template name="header">
+  <div id="header" role="banner">
+    <a tabindex="1" href="#content" id="jumpToContent">jump to content</a>
+    <div id="sr-header-area">
+      <div class="width-clip">
+        <div class="dropdown srdrop" onclick="open_menu(this)"><span class="selected title">my subreddits</span></div>
+        <div class="drop-choices srdrop"><a href="https://www.reddit.com/r/announcements/" class="choice" >announcements</a><a href="https://www.reddit.com/r/Art/" class="choice" >Art</a><a href="https://www.reddit.com/r/AskReddit/" class="choice" >AskReddit</a><a href="https://www.reddit.com/r/askscience/" class="choice" >askscience</a><a href="https://www.reddit.com/r/aww/" class="choice" >aww</a><a href="https://www.reddit.com/r/blog/" class="choice" >blog</a><a href="https://www.reddit.com/r/books/" class="choice" >books</a><a href="https://www.reddit.com/r/creepy/" class="choice" >creepy</a><a href="https://www.reddit.com/r/dataisbeautiful/" class="choice" >dataisbeautiful</a><a href="https://www.reddit.com/r/DIY/" class="choice" >DIY</a><a href="https://www.reddit.com/r/Documentaries/" class="choice" >Documentaries</a><a href="https://www.reddit.com/r/EarthPorn/" class="choice" >EarthPorn</a><a href="https://www.reddit.com/r/explainlikeimfive/" class="choice" >explainlikeimfive</a><a href="https://www.reddit.com/r/Fitness/" class="choice" >Fitness</a><a href="https://www.reddit.com/r/food/" class="choice" >food</a><a href="https://www.reddit.com/r/funny/" class="choice" >funny</a><a href="https://www.reddit.com/r/Futurology/" class="choice" >Futurology</a><a href="https://www.reddit.com/r/gadgets/" class="choice" >gadgets</a><a href="https://www.reddit.com/r/gaming/" class="choice" >gaming</a><a href="https://www.reddit.com/r/GetMotivated/" class="choice" >GetMotivated</a><a href="https://www.reddit.com/r/gifs/" class="choice" >gifs</a><a href="https://www.reddit.com/r/history/" class="choice" >history</a><a href="https://www.reddit.com/r/IAmA/" class="choice" >IAmA</a><a href="https://www.reddit.com/r/InternetIsBeautiful/" class="choice" >InternetIsBeautiful</a><a href="https://www.reddit.com/r/Jokes/" class="choice" >Jokes</a><a href="https://www.reddit.com/r/LifeProTips/" class="choice" >LifeProTips</a><a href="https://www.reddit.com/r/listentothis/" class="choice" >listentothis</a><a href="https://www.reddit.com/r/mildlyinteresting/" class="choice" >mildlyinteresting</a><a href="https://www.reddit.com/r/movies/" class="choice" >movies</a><a href="https://www.reddit.com/r/Music/" class="choice" >Music</a><a href="https://www.reddit.com/r/news/" class="choice" >news</a><a href="https://www.reddit.com/r/nosleep/" class="choice" >nosleep</a><a href="https://www.reddit.com/r/nottheonion/" class="choice" >nottheonion</a><a href="https://www.reddit.com/r/OldSchoolCool/" class="choice" >OldSchoolCool</a><a href="https://www.reddit.com/r/personalfinance/" class="choice" >personalfinance</a><a href="https://www.reddit.com/r/philosophy/" class="choice" >philosophy</a><a href="https://www.reddit.com/r/photoshopbattles/" class="choice" >photoshopbattles</a><a href="https://www.reddit.com/r/pics/" class="choice" >pics</a><a href="https://www.reddit.com/r/science/" class="choice" >science</a><a href="https://www.reddit.com/r/Showerthoughts/" class="choice" >Showerthoughts</a><a href="https://www.reddit.com/r/space/" class="choice" >space</a><a href="https://www.reddit.com/r/sports/" class="choice" >sports</a><a href="https://www.reddit.com/r/television/" class="choice" >television</a><a href="https://www.reddit.com/r/tifu/" class="choice" >tifu</a><a href="https://www.reddit.com/r/todayilearned/" class="choice" >todayilearned</a><a href="https://www.reddit.com/r/TwoXChromosomes/" class="choice" >TwoXChromosomes</a><a href="https://www.reddit.com/r/UpliftingNews/" class="choice" >UpliftingNews</a><a href="https://www.reddit.com/r/videos/" class="choice" >videos</a><a href="https://www.reddit.com/r/worldnews/" class="choice" >worldnews</a><a href="https://www.reddit.com/r/WritingPrompts/" class="choice" >WritingPrompts</a><a href="https://www.reddit.com/subreddits/" class="bottom-option choice" >edit subscriptions</a></div>
+        <div class="sr-list">
+          <ul class="flat-list sr-bar hover" >
+            <li class='selected'><a href="https://www.reddit.com/" class="choice" >front</a></li>
+            <li ><span class="separator">-</span><a href="https://www.reddit.com/r/all" class="choice" >all</a></li>
+            <li ><span class="separator">-</span><a href="https://www.reddit.com/r/random/" class="random choice" >random</a></li>
+          </ul>
+          <span class="separator">&nbsp;|&nbsp;</span>
+          <ul class="flat-list sr-bar hover" id='sr-bar'>
+            <li ><a href="https://www.reddit.com/r/AskReddit/" class="choice" >AskReddit</a></li>
+            <li ><span class="separator">-</span><a href="https://www.reddit.com/r/funny/" class="choice" >funny</a></li>
+            <li ><span class="separator">-</span><a href="https://www.reddit.com/r/pics/" class="choice" >pics</a></li>
+            <li ><span class="separator">-</span><a href="https://www.reddit.com/r/todayilearned/" class="choice" >todayilearned</a></li>
+            <li ><span class="separator">-</span><a href="https://www.reddit.com/r/worldnews/" class="choice" >worldnews</a></li>
+            <li ><span class="separator">-</span><a href="https://www.reddit.com/r/gifs/" class="choice" >gifs</a></li>
+            <li ><span class="separator">-</span><a href="https://www.reddit.com/r/videos/" class="choice" >videos</a></li>
+            <li ><span class="separator">-</span><a href="https://www.reddit.com/r/news/" class="choice" >news</a></li>
+            <li ><span class="separator">-</span><a href="https://www.reddit.com/r/gaming/" class="choice" >gaming</a></li>
+            <li ><span class="separator">-</span><a href="https://www.reddit.com/r/movies/" class="choice" >movies</a></li>
+            <li ><span class="separator">-</span><a href="https://www.reddit.com/r/aww/" class="choice" >aww</a></li>
+            <li ><span class="separator">-</span><a href="https://www.reddit.com/r/Showerthoughts/" class="choice" >Showerthoughts</a></li>
+            <li ><span class="separator">-</span><a href="https://www.reddit.com/r/mildlyinteresting/" class="choice" >mildlyinteresting</a></li>
+            <li ><span class="separator">-</span><a href="https://www.reddit.com/r/explainlikeimfive/" class="choice" >explainlikeimfive</a></li>
+            <li ><span class="separator">-</span><a href="https://www.reddit.com/r/IAmA/" class="choice" >IAmA</a></li>
+            <li ><span class="separator">-</span><a href="https://www.reddit.com/r/LifeProTips/" class="choice" >LifeProTips</a></li>
+            <li ><span class="separator">-</span><a href="https://www.reddit.com/r/Jokes/" class="choice" >Jokes</a></li>
+            <li ><span class="separator">-</span><a href="https://www.reddit.com/r/television/" class="choice" >television</a></li>
+            <li ><span class="separator">-</span><a href="https://www.reddit.com/r/photoshopbattles/" class="choice" >photoshopbattles</a></li>
+            <li ><span class="separator">-</span><a href="https://www.reddit.com/r/sports/" class="choice" >sports</a></li>
+            <li ><span class="separator">-</span><a href="https://www.reddit.com/r/Music/" class="choice" >Music</a></li>
+            <li ><span class="separator">-</span><a href="https://www.reddit.com/r/tifu/" class="choice" >tifu</a></li>
+            <li ><span class="separator">-</span><a href="https://www.reddit.com/r/Fitness/" class="choice" >Fitness</a></li>
+            <li ><span class="separator">-</span><a href="https://www.reddit.com/r/OldSchoolCool/" class="choice" >OldSchoolCool</a></li>
+            <li ><span class="separator">-</span><a href="https://www.reddit.com/r/TwoXChromosomes/" class="choice" >TwoXChromosomes</a></li>
+            <li ><span class="separator">-</span><a href="https://www.reddit.com/r/personalfinance/" class="choice" >personalfinance</a></li>
+            <li ><span class="separator">-</span><a href="https://www.reddit.com/r/GetMotivated/" class="choice" >GetMotivated</a></li>
+            <li ><span class="separator">-</span><a href="https://www.reddit.com/r/food/" class="choice" >food</a></li>
+            <li ><span class="separator">-</span><a href="https://www.reddit.com/r/space/" class="choice" >space</a></li>
+            <li ><span class="separator">-</span><a href="https://www.reddit.com/r/askscience/" class="choice" >askscience</a></li>
+            <li ><span class="separator">-</span><a href="https://www.reddit.com/r/science/" class="choice" >science</a></li>
+            <li ><span class="separator">-</span><a href="https://www.reddit.com/r/nottheonion/" class="choice" >nottheonion</a></li>
+            <li ><span class="separator">-</span><a href="https://www.reddit.com/r/books/" class="choice" >books</a></li>
+            <li ><span class="separator">-</span><a href="https://www.reddit.com/r/WritingPrompts/" class="choice" >WritingPrompts</a></li>
+            <li ><span class="separator">-</span><a href="https://www.reddit.com/r/Documentaries/" class="choice" >Documentaries</a></li>
+            <li ><span class="separator">-</span><a href="https://www.reddit.com/r/Futurology/" class="choice" >Futurology</a></li>
+            <li ><span class="separator">-</span><a href="https://www.reddit.com/r/DIY/" class="choice" >DIY</a></li>
+            <li ><span class="separator">-</span><a href="https://www.reddit.com/r/nosleep/" class="choice" >nosleep</a></li>
+            <li ><span class="separator">-</span><a href="https://www.reddit.com/r/history/" class="choice" >history</a></li>
+            <li ><span class="separator">-</span><a href="https://www.reddit.com/r/EarthPorn/" class="choice" >EarthPorn</a></li>
+            <li ><span class="separator">-</span><a href="https://www.reddit.com/r/creepy/" class="choice" >creepy</a></li>
+            <li ><span class="separator">-</span><a href="https://www.reddit.com/r/dataisbeautiful/" class="choice" >dataisbeautiful</a></li>
+            <li ><span class="separator">-</span><a href="https://www.reddit.com/r/UpliftingNews/" class="choice" >UpliftingNews</a></li>
+            <li ><span class="separator">-</span><a href="https://www.reddit.com/r/Art/" class="choice" >Art</a></li>
+            <li ><span class="separator">-</span><a href="https://www.reddit.com/r/InternetIsBeautiful/" class="choice" >InternetIsBeautiful</a></li>
+            <li ><span class="separator">-</span><a href="https://www.reddit.com/r/gadgets/" class="choice" >gadgets</a></li>
+            <li ><span class="separator">-</span><a href="https://www.reddit.com/r/listentothis/" class="choice" >listentothis</a></li>
+            <li ><span class="separator">-</span><a href="https://www.reddit.com/r/philosophy/" class="choice" >philosophy</a></li>
+            <li ><span class="separator">-</span><a href="https://www.reddit.com/r/announcements/" class="choice" >announcements</a></li>
+            <li ><span class="separator">-</span><a href="https://www.reddit.com/r/blog/" class="choice" >blog</a></li>
+          </ul>
+        </div>
+        <a href="https://www.reddit.com/subreddits/" id="sr-more-link" >more &raquo;</a>
+      </div>
+    </div>
+    <div id="header-bottom-left">
+      <a href="/" id="header-img" class="default-header" title="">reddit.com</a>&nbsp;
+      <ul class="tabmenu " >
+        <li class='selected'><a href="https://www.reddit.com/" class="choice" >hot</a></li>
+        <li ><a href="https://www.reddit.com/new/" class="choice" >new</a></li>
+        <li ><a href="https://www.reddit.com/rising/" class="choice" >rising</a></li>
+        <li ><a href="https://www.reddit.com/controversial/" class="choice" >controversial</a></li>
+        <li ><a href="https://www.reddit.com/top/" class="choice" >top</a></li>
+        <li ><a href="https://www.reddit.com/gilded/" class="choice" >gilded</a></li>
+        <li ><a href="https://www.reddit.com/wiki/" class="choice" >wiki</a></li>
+        <li ><a href="https://www.reddit.com/ads/" class="choice" >promoted</a></li>
+      </ul>
+    </div>
+    <div id="header-bottom-right">
+      <span class="user">Want to join?&#32;<a href="https://www.reddit.com/login" class="login-required" >Log in or sign up</a>&#32;in seconds.</span><span class="separator">|</span>
+      <ul class="flat-list hover" >
+        <li ><a href="javascript:void(0)" class="pref-lang choice">English</a></li>
+      </ul>
+    </div>
+  </div>
+</template>

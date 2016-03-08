@@ -1,0 +1,35 @@
+<template name="thing">
+  {{#with data}}
+    <div class=" thing id-{{name}} linkflair linkflair-tech odd&#32; gilded link self" id="thing_{{name}}" data-fullname="{{name}}" data-type="link" data-author="{{author}}" data-author-fullname="t2_91u3j" data-subreddit="{{subreddit}}" data-subreddit-fullname="t5_2qzb6" data-timestamp="{{created_utc}}" data-domain="{{domain}}" data-rank="{{rank}}" >
+      <p class="parent"></p>
+      <span class="rank">{{rank}}</span>
+      <div class="midcol unvoted" >
+        <div class="arrow up login-required access-required" role="button" aria-label="upvote" tabindex="0" ></div>
+        <div class="score unvoted">{{score}}</div>
+        <div class="arrow down login-required access-required" role="button" aria-label="downvote" tabindex="0" ></div>
+      </div>
+      {{#if thumbnailLength}}
+        <a class="thumbnail self may-blank " href="{{thumbnail}}" >
+          {{#unless thumbnailSelf}}
+            <img src="{{thumbnail}}" width='70' height='70' alt="">
+          {{/unless}}
+        </a>
+      {{/if}}
+      <div class="entry unvoted">
+        <p class="title"><a class="title may-blank " href="{{url}}" tabindex="1" >{{title}}</a><span class="linkflairlabel" title="{{link_flair_text}}">{{link_flair_text}}</span>&#32;<span class="domain">(<a href="/r/{{subreddit}}/">{{domain}}</a>)</span></p>
+        {{#if expandType}}
+          <div class="expando-button collapsed {{expandType}}"></div>
+        {{/if}}
+        <p class="tagline">submitted&#32;<time title="Tue Mar 8 17:38:30 2016 UTC" datetime="2016-03-08T17:38:30+00:00" class="live-timestamp">{{fromNow created_utc}}</time>&#32;<time class="edited-timestamp" title="last edited {{fromNow edited}}" datetime="2016-03-08T19:08:13+00:00">*</time>&#32;by&#32;<a href="https://www.reddit.com/user/{{author}}" class="author may-blank id-t2_91u3j" >{{author}}</a><span class="userattrs"></span>&#32;to&#32;<a href="https://www.reddit.com/r/{{subreddit}}/" class="subreddit hover may-blank" >/r/{{subreddit}}</a></p>
+        <ul class="flat-list buttons">
+          <li class="first"><a href="{{url}}" class="comments may-blank" >{{num_comments}} comments</a></li>
+          <li class="share"><a class="post-sharing-button" href="https://reddit.com">share</a></li>
+        </ul>
+        <div class="reportform report-{{name}}"></div>
+        <div class="expando expando-uninitialized" style='display: none' ><span class="error">loading...</span></div>
+      </div>
+      <div class="child" ></div>
+      <div class="clearleft"></div>
+    </div>
+  {{/with}}
+</template>
